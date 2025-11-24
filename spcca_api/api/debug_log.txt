@@ -1,0 +1,11 @@
+Received Data: 
+Received Data: {
+    "First_Name": "John",
+    "Last_Name": "Doe",
+    "Username": "johndoe123",
+    "Email": "john@example.com",
+    "Phone_No": "1234567890",
+    "Password": "securepass"
+}
+
+Received Data: 

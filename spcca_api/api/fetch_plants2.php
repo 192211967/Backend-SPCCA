@@ -1,0 +1,17 @@
+<?php
+include 'db.php';
+
+$sql = "SELECT Plant_Name, Species, Category FROM plants";
+$result = $conn->query($sql);
+
+$plants = array();
+
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        $plants[] = $row;
+    }
+}
+
+echo json_encode($plants);
+$conn->close();
+?>
